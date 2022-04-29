@@ -10,7 +10,7 @@
       
      
 
-<script type="text/javascript" src="dist/index.js"></script>
+
 
 
       
@@ -106,9 +106,16 @@
 
   <body>
       
+    
+      
+      
+      
+      
+      <script type="text/javascript" src="dist/index.js"></script>
+      
       
     <script>
-  // Sends event to client
+  
   vkBridge.send('VKWebAppInit')
   
   .then(data => {
@@ -116,15 +123,26 @@
     console.log("INI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
   })
   
-  
-  
   ;
         
-        
-        
-        
-        
-</script>
+       
+    </script>
+      
+      
+      
+      <script>  
+        if (vkBridge)
+        {
+            console.log("IS INI!!!!!!!!!!!!!!!!!!!!!!! TO IF");
+        }
+      
+      </script>
+      
+      
+      
+      
+      
+      
       
       
       
