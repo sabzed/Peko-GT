@@ -12,7 +12,13 @@
 
 <script>
   // Sends event to client
-  vkBridge.send('VKWebAppInit');
+  vkBridge.send('VKWebAppInit')
+  
+   .then(data => {
+    // Handling received data
+    console.log("Hello IM INI!!!!!!!!!!!!!!!");
+  })
+  ;
 </script>
       
       
@@ -110,14 +116,7 @@
   <body>
       
       
-      <script>
-  
-          console.log("Test");
-</script>
-      
-      
-      
-      
+    
       
       
       
