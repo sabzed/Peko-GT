@@ -8,25 +8,19 @@
       
       
       
-      <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+     
 
 <script>
-  // Sends event to client
-  vkBridge.send('VKWebAppInit')
   
-   .then(data => {
-    // Handling received data
-    console.log("Hello IM INI!!!!!!!!!!!!!!!");
-       
     
-       
-  })
-  
-  .catch(error => {
-     console.log("Catch ERRRRRRRRRRRRR!!!!!!!!!!!!!!!!");
-  })   
-  
-  ;
+    import bridge from '@vkontakte/vk-bridge';
+
+// Sends event to client
+bridge.send('VKWebAppInit');
+
+// Subscribes to event, sended by client
+bridge.subscribe(e => console.log(e));
+    
 </script>
       
       
