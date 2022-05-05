@@ -92,8 +92,7 @@
 
   <body>
       
-      
-      
+         
        
        <script type="text/javascript" src="dist/index.js"></script>
       
@@ -113,6 +112,9 @@
     </script>
       
       
+      
+      
+      
     <div id="gameContainer"></div>
     <div id="loader">
       <img class="logo" src="logo.png">
@@ -123,7 +125,7 @@
 
   <script src="Build/UnityLoader.js"></script>
   <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/5.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/6.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
